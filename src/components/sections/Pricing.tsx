@@ -1,30 +1,11 @@
 "use client";
+import { pricingPlans as plans } from "@/config/mock-data";
 
 import { motion } from "framer-motion";
 import { GlowingButton } from "../core/GlowingButton";
 import { Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const plans = [
-  {
-    name: "Starter",
-    price: "$299",
-    features: ["Global Network Map", "Real-time Tracking", "Basic Analytics", "Email Support"],
-    featured: false
-  },
-  {
-    name: "Enterprise",
-    price: "$899",
-    features: ["Everything in Starter", "Predictive AI Routing", "Quantum Encryption", "24/7 Dedicated Support", "API Access"],
-    featured: true
-  },
-  {
-    name: "Corporate",
-    price: "Custom",
-    features: ["Everything in Enterprise", "On-Premise Deployment", "Custom ML Models", "SLA Guarantee"],
-    featured: false
-  }
-];
 
 export function Pricing() {
   return (

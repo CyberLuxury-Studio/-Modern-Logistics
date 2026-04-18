@@ -1,26 +1,10 @@
 "use client";
+import { featuresList as features } from "@/config/mock-data";
 
 import { motion } from "framer-motion";
 import { TechCard } from "../core/TechCard";
-import { Globe2, ShieldAlert, Zap } from "lucide-react";
 
-const features = [
-  {
-    title: "Global Mesh Network",
-    description: "Visualize every node in your supply chain across a real-time interactive 3D map.",
-    icon: Globe2
-  },
-  {
-    title: "Predictive Analytics",
-    description: "AI predicts delays before they happen, rerouting shipments via the fastest paths automatically.",
-    icon: Zap
-  },
-  {
-    title: "Quantum Encryption",
-    description: "Secure manifest logs and tracking data with unbreakable decentralized encryption.",
-    icon: ShieldAlert
-  }
-];
+
 
 export function Features() {
   return (

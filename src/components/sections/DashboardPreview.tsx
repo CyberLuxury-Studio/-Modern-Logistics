@@ -1,14 +1,10 @@
 "use client";
+import { mockTrackingData } from "@/config/mock-data";
 
 import { motion } from "framer-motion";
 import { TrackingBadge } from "../core/TrackingBadge";
-import { Package, Navigation, Activity } from "lucide-react";
 
-const mockTrackingData = [
-  { id: "TX-902", dest: "Tokyo, JP", status: "In Transit" as const, progress: 75, icon: Package },
-  { id: "LDN-11X", dest: "London, UK", status: "In Transit" as const, progress: 42, icon: Navigation },
-  { id: "NY-Z01", dest: "New York, US", status: "Delivered" as const, progress: 100, icon: Activity },
-];
+
 
 export function DashboardPreview() {
   return (
