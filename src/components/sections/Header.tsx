@@ -1,4 +1,5 @@
 "use client";
+import { siteConfig } from "@/config/site";
 
 import { motion } from "framer-motion";
 import { GlowingButton } from "../core/GlowingButton";
@@ -17,9 +18,9 @@ export function Header() {
         </div>
 
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-          <a href="#features" className="hover:text-neon-cyan transition-colors">Features</a>
-          <a href="#dashboard" className="hover:text-neon-cyan transition-colors">Dashboard</a>
-          <a href="#pricing" className="hover:text-neon-cyan transition-colors">Pricing</a>
+          {siteConfig.nav.map((item) => (
+            <a key={item.name} href={item.href} className="hover:text-neon-cyan transition-colors">{item.name}</a>
+          ))}
         </nav>
 
         <GlowingButton variant="outline" className="hidden md:flex px-4 py-2 text-sm">

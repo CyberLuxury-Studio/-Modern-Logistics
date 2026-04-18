@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="dark scroll-smooth">
       <body
         className={`${spaceGrotesk.variable} ${inter.variable} antialiased bg-slate-950 text-slate-50 min-h-screen font-body`}
       >
