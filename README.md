@@ -62,3 +62,13 @@ This project is ready to be deployed on Vercel. Simply push this repository to G
 npm run build
 npm run start
 ```
+
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [CONTRIBUTING.md](./CONTRIBUTING.md) for details.
+
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
