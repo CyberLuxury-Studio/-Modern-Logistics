@@ -4,6 +4,10 @@ import { Features } from "@/components/sections/Features";
 import { DashboardPreview } from "@/components/sections/DashboardPreview";
 import { Pricing } from "@/components/sections/Pricing";
 import { CTA, Footer } from "@/components/sections/CTA";
+import { FAQSection } from "@/components/sections/FAQSection";
+import { CTASection } from "@/components/sections/CTASection";
+
+
 
 export default function Home() {
   return (
@@ -14,6 +18,8 @@ export default function Home() {
       <DashboardPreview />
       <Pricing />
       <CTA />
+      <FAQSection />
+      <CTASection />
       <Footer />
     </main>
   );
